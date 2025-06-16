@@ -51,8 +51,6 @@ private:
     };
 
 public:
-    CHIP_ERROR Init() override;
-
     CHIP_ERROR GetModeLabelByIndex(uint8_t modeIndex, MutableCharSpan & label) override;
 
     CHIP_ERROR GetModeValueByIndex(uint8_t modeIndex, uint8_t & value) override;
