@@ -16,6 +16,7 @@
  *    limitations under the License.
  */
 
+#include <app-common/zap-generated/cluster-objects.h>
 #include <app/clusters/mode-base-server/mode-base-server.h>
 #include <app/util/config.h>
 #include <cstring>
