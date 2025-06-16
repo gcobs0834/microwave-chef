@@ -85,10 +85,10 @@ ModeBase::Instance * GetInstance(EndpointId endpointId)
 }
 } // namespace ChefMicrowaveOvenMode
 
-CHIP_ERROR MicrowaveOvenMode::ChefDelegate::Init()
-{
-    return CHIP_NO_ERROR;
-}
+// CHIP_ERROR MicrowaveOvenMode::ChefDelegate::Init()
+// {
+//     return CHIP_NO_ERROR;
+// }
 
 void MicrowaveOvenMode::ChefDelegate::HandleChangeToMode(uint8_t NewMode, ModeBase::Commands::ChangeToModeResponse::Type & response)
 {
