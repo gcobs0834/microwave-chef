@@ -30,7 +30,7 @@ using List              = chip::app::DataModel::List<T>;
 using ModeTagStructType = chip::app::Clusters::detail::Structs::ModeTagStruct::Type;
 using Status            = Protocols::InteractionModel::Status;
 
-#ifdef MATTER_DM_PLUGIN_MICROWAVE_OVEN_CONTROL_SERVER
+#if MATTER_DM_MICROWAVE_OVEN_CONTROL_CLUSTER_SERVER_ENDPOINT_COUNT > 0
 
 ChefMicrowaveOvenDevice::ChefMicrowaveOvenDevice(EndpointId aClustersEndpoint) :
     mOperationalStateInstancePtr(OperationalState::GetOperationalStateInstance()),
@@ -126,4 +126,4 @@ void InitChefMicrowaveOvenControlCluster()
     }
 }
 
-#endif // MATTER_DM_PLUGIN_MICROWAVE_OVEN_CONTROL_SERVER
+#endif // MATTER_DM_MICROWAVE_OVEN_CONTROL_CLUSTER_SERVER_ENDPOINT_COUNT
